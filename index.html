@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: linear-gradient(to right, purple, red, yellow);
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box {
+        height: 70vh;
+        width: 85vw;
+        background-image: linear-gradient(
+          to right,
+          rgb(236, 98, 121),
+          rgb(108, 108, 231),
+          rgb(223, 160, 45)
+        );
+        position: absolute;
+        color: white;
+      }
+
+      content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 400px;
+        margin: 30px;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: large;
+      }
+
+      .img {
+        position: absolute;
+        right: 5%;
+        top: 15%;
+      }
+
+      .img:hover {
+        transform: scale(1.6);
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <content>
+        <div>
+          <h1>Shoes-1</h1>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
+            labore officia reiciendis fugiat a esse.? Ratione totam tempore
+            quia. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Veniam, delectus?
+          </p>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            deleniti aut commodi officia a. Ipsum nisi accusantium maiores quae
+            aperiam.
+          </p>
+        </div>
+      </content>
+
+      <div class="img">
+        <img src="n2.png" alt="shoe" height="300px" width="500px" />
+      </div>
+    </div>
+  </body>
+</html>
